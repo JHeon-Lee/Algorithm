@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="DataStructure\01_LinkedList\LinkedList.cpp" />
+    <ClCompile Include="DataStructure\01_LinkedList\DoubleLinkedList.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="DataStructure\01_LinkedList\LinkedList.h" />
+    <ClInclude Include="DataStructure\01_LinkedList\DoubleLinkedList.h" />
+  </ItemGroup>
+</Project>
