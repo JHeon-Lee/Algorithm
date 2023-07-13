@@ -1,33 +1,39 @@
 #pragma once
 
 void DoDoubleLinkedList();
-void Print();
+void DLLPrint();
 
 class DoubleLinkedList
 {
 public:
-	static DoubleLinkedList* Create(DataType data);
-
+	static DoubleLinkedList* DoubleLinkedListCreate(DataType data);
 	static void Insert(DoubleLinkedList* cur, DoubleLinkedList* newNode);
-
-	void InsertHead();
-	void Push();
+	static void InsertHead(DoubleLinkedList* newNode);
+	static void Push(DoubleLinkedList* newNode);
 
 	void Remove();
 	static void RemoveAll();
+	static void RemoveAll(const DoubleLinkedList* head);
 
-	static DoubleLinkedList* GetNode(int index);
-	const DataType GetData() { return Data; }
-
-	static const int GetLength() { return Length; }
-
-	static int GetNodeCount(int index);
+	static void SetHead(DoubleLinkedList* node);
+	static void SetTail(DoubleLinkedList* node);
 
 	static const DoubleLinkedList* GetHead() { return Head; }
 	static const DoubleLinkedList* GetTail() { return Tail; }
 
-private:
-	static void RemoveAll(const DoubleLinkedList* head);
+	void SetNext(DoubleLinkedList* next) { Next = next; }
+	void SetPrev(DoubleLinkedList* prev) { Prev = prev; }
+	void SetData(DataType data) { Data = data; }
+
+	const DoubleLinkedList* GetNext() { return Next; }
+	const DoubleLinkedList* GetPrev() { return Prev; }
+	const DataType GetData() { return Data; }
+
+	static DoubleLinkedList* GetNode(int index);
+	static const int GetLength() { return Length; }
+
+	static int GetNodeCount(int index);
+	static int GetNodeReverseCount(int index);
 
 private:
 	DataType Data;

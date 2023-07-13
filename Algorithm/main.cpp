@@ -5,7 +5,7 @@
 
 int main()
 {
-	DoLinkedList();
+	DoDoubleLinkedList();
 
 	return 0;
 }
