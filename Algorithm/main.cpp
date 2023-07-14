@@ -5,7 +5,10 @@
 
 int main()
 {
-	DoDoubleLinkedList();
+	// DoLinkedList();
+	// DoDoubleLinkedList();
+	// DoStack();
+	DoQueue();
 
 	return 0;
 }

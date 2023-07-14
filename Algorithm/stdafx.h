@@ -18,6 +18,8 @@ using namespace std;
 #define Clear system("cls");
 #define Pause system("Pause")
 
+#define MAX_SIZE 100
+
 #define endll endl << endl
 
 enum DS

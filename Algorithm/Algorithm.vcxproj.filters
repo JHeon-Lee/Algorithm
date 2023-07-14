@@ -4,11 +4,17 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="DataStructure\01_LinkedList\LinkedList.cpp" />
     <ClCompile Include="DataStructure\01_LinkedList\DoubleLinkedList.cpp" />
+    <ClCompile Include="DataStructure\02_Stack\Stack.cpp" />
+    <ClCompile Include="DataStructure\03_Queue\Queue.cpp" />
+    <ClCompile Include="DataStructure\04_Tree\Tree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="DataStructure\01_LinkedList\LinkedList.h" />
     <ClInclude Include="DataStructure\01_LinkedList\DoubleLinkedList.h" />
+    <ClInclude Include="DataStructure\02_Stack\Stack.h" />
+    <ClInclude Include="DataStructure\03_Queue\Queue.h" />
+    <ClInclude Include="DataStructure\04_Tree\Tree.h" />
   </ItemGroup>
 </Project>

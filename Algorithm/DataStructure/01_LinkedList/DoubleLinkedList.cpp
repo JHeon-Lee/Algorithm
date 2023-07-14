@@ -72,9 +72,9 @@ void DoubleLinkedList::Insert(DoubleLinkedList* cur, DoubleLinkedList* newNode)
 void DoubleLinkedList::InsertHead(DoubleLinkedList* newNode)
 {
 	newNode->Next = Head;
+	Head->Prev = newNode; // Head, Tail ¾È¿«¾îµµ µÊ
+
 	Head = newNode;
-	newNode->Next->Prev = newNode;
-	Tail->Next = Head;
 
 	++Length;
 }
@@ -85,15 +85,13 @@ void DoubleLinkedList::Push(DoubleLinkedList* newNode)
 	{
 		Head = newNode;
 		Tail = newNode;
-		newNode->Next = Tail;
-		newNode->Prev = Tail;
 	}
 	else
 	{
 		Tail->Next = newNode;
 		newNode->Prev = Tail;
+
 		Tail = newNode;
-		newNode->Next = Head;
 	}
 
 	++Length;
@@ -101,36 +99,30 @@ void DoubleLinkedList::Push(DoubleLinkedList* newNode)
 
 void DoubleLinkedList::Remove()
 {
-	if (this == Head)
+	if (Head == Tail) // ºü¶ß¸° ºÎºÐ
 	{
-		if (this->Next)
-		{
-			Head = this->Next;
-			Tail->Next = Head;
-			Head->Prev = Tail;
-		}
-
 		delete this;
 		return;
 	}
 
-	DoubleLinkedList* checker = Head;
-
-	while (true)
+	if (this == Head) // Á»´õ ´Þ¶óÁü
 	{
-		if (checker->Next == this)
-		{
-			checker->Next = this->Next;
-			this->Next->Prev = checker;
-
-			delete this;
-			break;
-		}
-		else
-			checker = checker->Next;
+		Head->Next->Prev = nullptr;
+		Head = Head->Next;
+	}
+	else if (this == Tail)
+	{
+		Tail->Prev->Next = nullptr;
+		Tail = Tail->Prev;
+	}
+	else
+	{
+		this->Prev->Next = this->Next;
+		this->Next->Prev = this->Prev;
 	}
 
 	--Length;
+	delete this;
 }
 
 void DoubleLinkedList::RemoveAll()
@@ -164,32 +156,18 @@ void DoubleLinkedList::RemoveAll(const DoubleLinkedList* head)
 
 void DoubleLinkedList::SetHead(DoubleLinkedList* node)
 {
-	if (Head != nullptr)
-	{
-		node->Next = Head->Next;
-		Tail->Next = node;
-		Head->Next->Prev = node;
-		node->Prev = Head->Prev;
-		Head = node;
-	}
+	Head->Prev = node;
+	node->Next = Head;
 
-	else
-		InsertHead(node);
+	Head = node;
 }
 
 void DoubleLinkedList::SetTail(DoubleLinkedList* node)
 {
-	if (Tail != nullptr)
-	{
-		node->Next = Tail->Next;
-		Tail->Prev->Next = node;
-		Head->Prev = node;
-		node->Prev = Tail->Prev;
-		Tail = node;
-	}
+	Tail->Next = node;
+	node->Prev = Tail;
 
-	else
-		Push(node);
+	Tail = node;
 }
 
 DoubleLinkedList* DoubleLinkedList::GetNode(int index)
@@ -210,7 +188,7 @@ int DoubleLinkedList::GetNodeCount(int index)
 	DoubleLinkedList* cur = GetNode(index);
 
 	if (cur == nullptr)
-		return -1;
+		return 0;
 
 	int count = 1;
 	while (cur->Next != nullptr)
@@ -227,7 +205,7 @@ int DoubleLinkedList::GetNodeReverseCount(int index)
 	DoubleLinkedList* cur = GetNode(index);
 
 	if (cur == nullptr)
-		return -1;
+		return 0;
 
 	int count = 1;
 	while (cur->Prev != nullptr)
