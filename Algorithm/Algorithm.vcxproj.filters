@@ -7,6 +7,7 @@
     <ClCompile Include="DataStructure\02_Stack\Stack.cpp" />
     <ClCompile Include="DataStructure\03_Queue\Queue.cpp" />
     <ClCompile Include="DataStructure\04_Tree\Tree.cpp" />
+    <ClCompile Include="DataStructure\05_Heap\Heap.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
@@ -16,5 +17,6 @@
     <ClInclude Include="DataStructure\02_Stack\Stack.h" />
     <ClInclude Include="DataStructure\03_Queue\Queue.h" />
     <ClInclude Include="DataStructure\04_Tree\Tree.h" />
+    <ClInclude Include="DataStructure\05_Heap\Heap.h" />
   </ItemGroup>
 </Project>

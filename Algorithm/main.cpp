@@ -8,7 +8,8 @@ int main()
 	// DoLinkedList();
 	// DoDoubleLinkedList();
 	// DoStack();
-	DoQueue();
+	// DoQueue();
+	DoBinaryTree();
 
 	return 0;
 }
