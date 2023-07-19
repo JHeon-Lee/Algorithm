@@ -9,7 +9,11 @@ int main()
 	// DoDoubleLinkedList();
 	// DoStack();
 	// DoQueue();
-	DoBinaryTree();
+	// DoBinaryTree();
+	// DoHeap();
+	// DoSelectionSort();
+	// DoInsertionSort();
+	DoBubbleSort();
 
 	return 0;
 }

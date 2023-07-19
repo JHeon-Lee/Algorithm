@@ -8,6 +8,10 @@
     <ClCompile Include="DataStructure\03_Queue\Queue.cpp" />
     <ClCompile Include="DataStructure\04_Tree\Tree.cpp" />
     <ClCompile Include="DataStructure\05_Heap\Heap.cpp" />
+    <ClCompile Include="Algorithm\01_SelectionSort\SelectionSort.cpp" />
+    <ClCompile Include="Algorithm\02_InsertionSort\InsertionSort.cpp" />
+    <ClCompile Include="Algorithm\03_BubbleSort\BubbleSort.cpp" />
+    <ClCompile Include="Algorithm\04_QuickSort\QuickSort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
@@ -18,5 +22,9 @@
     <ClInclude Include="DataStructure\03_Queue\Queue.h" />
     <ClInclude Include="DataStructure\04_Tree\Tree.h" />
     <ClInclude Include="DataStructure\05_Heap\Heap.h" />
+    <ClInclude Include="Algorithm\01_SelectionSort\SelectionSort.h" />
+    <ClInclude Include="Algorithm\02_InsertionSort\InsertionSort.h" />
+    <ClInclude Include="Algorithm\03_BubbleSort\BubbleSort.h" />
+    <ClInclude Include="Algorithm\04_QuickSort\QuickSort.h" />
   </ItemGroup>
 </Project>

@@ -144,6 +144,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Algorithm\01_SelectionSort\SelectionSort.cpp" />
+    <ClCompile Include="Algorithm\02_InsertionSort\InsertionSort.cpp" />
+    <ClCompile Include="Algorithm\03_BubbleSort\BubbleSort.cpp" />
+    <ClCompile Include="Algorithm\04_QuickSort\QuickSort.cpp" />
     <ClCompile Include="DataStructure\01_LinkedList\DoubleLinkedList.cpp" />
     <ClCompile Include="DataStructure\01_LinkedList\LinkedList.cpp" />
     <ClCompile Include="DataStructure\02_Stack\Stack.cpp" />
@@ -153,6 +157,10 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Algorithm\01_SelectionSort\SelectionSort.h" />
+    <ClInclude Include="Algorithm\02_InsertionSort\InsertionSort.h" />
+    <ClInclude Include="Algorithm\03_BubbleSort\BubbleSort.h" />
+    <ClInclude Include="Algorithm\04_QuickSort\QuickSort.h" />
     <ClInclude Include="DataStructure\01_LinkedList\DoubleLinkedList.h" />
     <ClInclude Include="DataStructure\01_LinkedList\LinkedList.h" />
     <ClInclude Include="DataStructure\02_Stack\Stack.h" />
