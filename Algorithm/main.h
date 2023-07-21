@@ -9,3 +9,4 @@
 #include "Algorithm/01_SelectionSort/SelectionSort.h"
 #include "Algorithm/02_InsertionSort/InsertionSort.h"
 #include "Algorithm/03_BubbleSort/BubbleSort.h"
+#include "Algorithm/04_QuickSort/QuickSort.h"

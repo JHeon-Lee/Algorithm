@@ -10,7 +10,7 @@ void DoQuickSort()
 	for (int n : arr)
 		cout << n << " ";
 
-	QuickSort(arr, 5, 5);
+	QuickSort(arr, 0, 9);
 
 	cout << endll;
 

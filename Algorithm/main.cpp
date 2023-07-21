@@ -13,7 +13,8 @@ int main()
 	// DoHeap();
 	// DoSelectionSort();
 	// DoInsertionSort();
-	DoBubbleSort();
+	// DoBubbleSort();
+	DoQuickSort();
 
 	return 0;
 }
