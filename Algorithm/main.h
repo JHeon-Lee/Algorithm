@@ -11,3 +11,4 @@
 #include "Algorithm/03_BubbleSort/BubbleSort.h"
 #include "Algorithm/04_QuickSort/QuickSort.h"
 #include "Algorithm/05_MergeSort/MergeSort.h"
+#include "Algorithm/06_BinarySearch/BinarySearch.h"

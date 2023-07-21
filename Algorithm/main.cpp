@@ -15,7 +15,8 @@ int main()
 	// DoInsertionSort();
 	// DoBubbleSort();
 	// DoQuickSort();
-	DoMergeSort();
+	// DoMergeSort();
+	DoBinarySearch();
 
 	return 0;
 }

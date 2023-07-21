@@ -149,6 +149,7 @@
     <ClCompile Include="Algorithm\03_BubbleSort\BubbleSort.cpp" />
     <ClCompile Include="Algorithm\04_QuickSort\QuickSort.cpp" />
     <ClCompile Include="Algorithm\05_MergeSort\MergeSort.cpp" />
+    <ClCompile Include="Algorithm\06_BinarySearch\BinarySearch.cpp" />
     <ClCompile Include="DataStructure\01_LinkedList\DoubleLinkedList.cpp" />
     <ClCompile Include="DataStructure\01_LinkedList\LinkedList.cpp" />
     <ClCompile Include="DataStructure\02_Stack\Stack.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="Algorithm\03_BubbleSort\BubbleSort.h" />
     <ClInclude Include="Algorithm\04_QuickSort\QuickSort.h" />
     <ClInclude Include="Algorithm\05_MergeSort\MergeSort.h" />
+    <ClInclude Include="Algorithm\06_BinarySearch\BinarySearch.h" />
     <ClInclude Include="DataStructure\01_LinkedList\DoubleLinkedList.h" />
     <ClInclude Include="DataStructure\01_LinkedList\LinkedList.h" />
     <ClInclude Include="DataStructure\02_Stack\Stack.h" />
