@@ -12,6 +12,7 @@
     <ClCompile Include="Algorithm\02_InsertionSort\InsertionSort.cpp" />
     <ClCompile Include="Algorithm\03_BubbleSort\BubbleSort.cpp" />
     <ClCompile Include="Algorithm\04_QuickSort\QuickSort.cpp" />
+    <ClCompile Include="Algorithm\05_MergeSort\MergeSort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
@@ -26,5 +27,6 @@
     <ClInclude Include="Algorithm\02_InsertionSort\InsertionSort.h" />
     <ClInclude Include="Algorithm\03_BubbleSort\BubbleSort.h" />
     <ClInclude Include="Algorithm\04_QuickSort\QuickSort.h" />
+    <ClInclude Include="Algorithm\05_MergeSort\MergeSort.h" />
   </ItemGroup>
 </Project>

@@ -14,7 +14,8 @@ int main()
 	// DoSelectionSort();
 	// DoInsertionSort();
 	// DoBubbleSort();
-	DoQuickSort();
+	// DoQuickSort();
+	DoMergeSort();
 
 	return 0;
 }
